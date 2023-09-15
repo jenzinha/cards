@@ -3,4 +3,3 @@
 
 - HTML;
 - CSS;
-- JS;
