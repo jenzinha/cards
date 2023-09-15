@@ -148,3 +148,98 @@ main{
 .nft-card .criador .texto .nome:hover{
     color: var(--primary-madium);
 }
+
+.nft-card.estetica-speak-now  {
+    background-color: hsl(277, 42%, 47%); 
+    color: white;
+}
+
+.nft-card.estetica-red  {
+    background-color: hsl(0, 75%, 50%); 
+    color: white;
+}
+
+.nft-card.estetica-folklore  {
+    background-color: hsl(60, 9%, 55%); 
+    color: black;
+}
+.nft-card.estetica-speak-now p {
+    color: black;
+    
+}
+.nft-card.estetica-red p{
+    color: black;
+}
+.nft-card.estetica-folklore p{
+    color: black;
+}
+.nft-card a {
+    color: var(--primary-medium);
+}
+
+
+.nft-card a:hover {
+    color: white;
+}
+
+.nft-card .info .estetica::before {
+    filter: invert(1); 
+}
+
+.nft-card .info .dias-restantes::before {
+    filter: invert(1); 
+}
+.animate__animate__slideInDown {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  .animate__animated.animate__slideInDown {
+    --animate-duration: 2s;
+  }
+
+ 
+header {
+    background-color: var(--neutral-medium); 
+    padding: 10px 0;
+    box-shadow: var(--neutral-soft) 0px 2px 2px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-title {
+    font-size: 24px;
+    color: var(--primary-medium);
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-nav li {
+    margin-right: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: var(--primary-medium);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: var(--primary-soft);
+}
