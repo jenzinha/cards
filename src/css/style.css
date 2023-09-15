@@ -11,11 +11,7 @@ main{
     align-items: center;
     height: 100vh;
     padding: 0 30px;
-    box-shadow: var(--neutral-soft) 0px 1px 1px, 
-            var(--neutral-soft) 0px 2px 2px, 
-            var(--neutral-soft) 0px 4px 4px, 
-            var(--neutral-soft) 0px 8px 8px, 
-            var(--neutral-soft) 0px 16px 16px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .nft-card{
