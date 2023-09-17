@@ -1,28 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-body{
+body {
     background-color: var(--neutral-dark);
     font-family: 'Outfit', sans-serif;
 }
+.site-header {
+    background-color: black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-main{
+.logo img {
+    max-width: 100px; 
+    margin-left: 50px;
+    border-radius: 50px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 20px; 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-nav a:hover {
+    color: var(--primary-soft);
+}
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 0 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    vertical-align: top;
 }
 
-.nft-card{
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Altera a direção dos cartões para uma coluna */
+        align-items: center;
+    }
+
+    .nft-card {
+        width: 100%; /* Define a largura total para ocupar toda a largura da tela */
+        margin-bottom: 20px; /* Adicione um espaçamento entre os cartões */
+    }
+}
+
+.nft-card {
     width: 350px;
     background-color: var(--neutral-medium);
     border-radius: 15px;
     padding: 25px;
-    box-shadow: var(--neutral-soft) 0px 1px 1px, 
-            var(--neutral-soft) 0px 2px 2px, 
-            var(--neutral-soft) 0px 4px 4px, 
-            var(--neutral-soft) 0px 8px 8px, 
-            var(--neutral-soft) 0px 16px 16px;
+    box-shadow: var(--neutral-soft) 0px 1px 1px,
+                var(--neutral-soft) 0px 2px 2px,
+                var(--neutral-soft) 0px 4px 4px,
+                var(--neutral-soft) 0px 8px 8px,
+                var(--neutral-soft) 0px 16px 16px;
+    
 }
 
 .nft-card .image-link{
@@ -148,3 +197,30 @@ main{
 .nft-card .criador .texto .nome:hover{
     color: var(--primary-madium);
 }
+.nft-card a {
+    color: var(--primary-medium);
+}
+
+
+.nft-card a:hover {
+    color: white;
+}
+
+.nft-card .info .estetica::before {
+    filter: invert(1); 
+}
+
+.nft-card .info .dias-restantes::before {
+    filter: invert(1); 
+}
+.animate__animate__fadeInBottomRight {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+  }
+  .animate__animated.animate__fadeInBottomRight {
+    --animate-duration: 5s;
+  }
+  
