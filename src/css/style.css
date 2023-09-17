@@ -1,28 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-body{
+body {
     background-color: var(--neutral-dark);
     font-family: 'Outfit', sans-serif;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 0 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    vertical-align: top;
 }
 
-.nft-card{
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Altera a direção dos cartões para uma coluna */
+        align-items: center;
+    }
+
+    .nft-card {
+        width: 100%; /* Define a largura total para ocupar toda a largura da tela */
+        margin-bottom: 20px; /* Adicione um espaçamento entre os cartões */
+    }
+}
+
+.nft-card {
     width: 350px;
     background-color: var(--neutral-medium);
     border-radius: 15px;
     padding: 25px;
-    box-shadow: var(--neutral-soft) 0px 1px 1px, 
-            var(--neutral-soft) 0px 2px 2px, 
-            var(--neutral-soft) 0px 4px 4px, 
-            var(--neutral-soft) 0px 8px 8px, 
-            var(--neutral-soft) 0px 16px 16px;
+    box-shadow: var(--neutral-soft) 0px 1px 1px,
+                var(--neutral-soft) 0px 2px 2px,
+                var(--neutral-soft) 0px 4px 4px,
+                var(--neutral-soft) 0px 8px 8px,
+                var(--neutral-soft) 0px 16px 16px;
+    
 }
 
 .nft-card .image-link{
@@ -148,31 +163,6 @@ main{
 .nft-card .criador .texto .nome:hover{
     color: var(--primary-madium);
 }
-
-.nft-card.estetica-speak-now  {
-    background-color: hsl(277, 42%, 47%); 
-    color: white;
-}
-
-.nft-card.estetica-red  {
-    background-color: hsl(0, 75%, 50%); 
-    color: white;
-}
-
-.nft-card.estetica-folklore  {
-    background-color: hsl(60, 9%, 55%); 
-    color: black;
-}
-.nft-card.estetica-speak-now p {
-    color: black;
-    
-}
-.nft-card.estetica-red p{
-    color: black;
-}
-.nft-card.estetica-folklore p{
-    color: black;
-}
 .nft-card a {
     color: var(--primary-medium);
 }
@@ -189,57 +179,14 @@ main{
 .nft-card .info .dias-restantes::before {
     filter: invert(1); 
 }
-.animate__animate__slideInDown {
+.animate__animate__fadeInBottomRight {
     display: inline-block;
     margin: 0 0.5rem;
   
     animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-duration: 5s; /* don't forget to set a duration! */
   }
-  .animate__animated.animate__slideInDown {
-    --animate-duration: 2s;
+  .animate__animated.animate__fadeInBottomRight {
+    --animate-duration: 5s;
   }
-
- 
-header {
-    background-color: var(--neutral-medium); 
-    padding: 10px 0;
-    box-shadow: var(--neutral-soft) 0px 2px 2px;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.header-title {
-    font-size: 24px;
-    color: var(--primary-medium);
-    margin: 0;
-}
-
-.header-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.header-nav li {
-    margin-right: 20px;
-}
-
-.header-nav a {
-    text-decoration: none;
-    color: var(--primary-medium);
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.header-nav a:hover {
-    color: var(--primary-soft);
-}
+  
